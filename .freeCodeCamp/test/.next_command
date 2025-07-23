@@ -229,3 +229,6 @@ echo -e "hi $(echo " Fabio" | sed 's/^ +//g')"
 echo -e "hi $(echo " Fabio" | sed 's/^ *//g')"
 ./salon.sh
 ./salon.sh
+pg_dump -cC --inserts -U freecodecamp salon > salon.sql
+rm save_salon.sql
+./salon.sh
